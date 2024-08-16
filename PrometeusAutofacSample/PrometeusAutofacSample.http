@@ -1,0 +1,6 @@
+@PrometeusAutofacSample_HostAddress = http://localhost:5001
+
+GET {{PrometeusAutofacSample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

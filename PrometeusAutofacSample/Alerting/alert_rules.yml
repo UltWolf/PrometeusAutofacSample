@@ -1,0 +1,11 @@
+﻿groups:
+  - name: example-alert-rules
+    rules:
+    - alert: HighRequestDuration
+      expr: custom_request_duration_seconds > 1.0
+      for: 2m
+      labels:
+        severity: warning
+      annotations:
+        summary: "High request duration detected"
+        description: "The request duration for a particular job has exceeded 1 second for more than 2 minutes."
